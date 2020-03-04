@@ -22,7 +22,7 @@ jobs:
         pip install --upgrade pip
         pip install -e .
     - name: Integration tests with bash shell
-      # shell: bash
+      shell: bash
       run: |
         python tests/canonical_gazetteer.py -vv
         python tests/canonical.py -vv
